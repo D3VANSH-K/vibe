@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vibe — Find Your Match</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700&family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;1,9..40,300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="bg-blob blob-1"></div>
+    <div class="bg-blob blob-2"></div>
+    <div class="bg-blob blob-3"></div>
+
+    <div class="container">
+        <div class="card">
+
+            <header>
+                <div class="logo-mark">✦</div>
+                <h1>Vibe</h1>
+                <p class="tagline">Find your next obsession</p>
+            </header>
+
+            <div class="mode-selector">
+                <button class="mode-btn active" data-mode="watch">Watch</button>
+                <button class="mode-btn" data-mode="read">Read</button>
+                <button class="mode-btn" data-mode="both">Both</button>
+            </div>
+
+            <div class="search-box">
+                <span class="search-icon">◎</span>
+                <input type="text" id="userPrompt" placeholder="Describe the vibe... (e.g. 'rainy city mystery')">
+            </div>
+
+            <button class="filter-toggle" onclick="toggleFilters()">
+                <span>Refine</span>
+                <span class="toggle-arrow" id="filterArrow">↓</span>
+            </button>
+
+            <div class="filter-panel" id="filterPanel">
+                <div class="filter-grid">
+                    <div class="filter-group">
+                        <label>Genre</label>
+                        <input type="text" id="genreInput" class="filter-input" placeholder="Cyberpunk, Noir...">
+                    </div>
+                    <div class="filter-group">
+                        <label>Mood</label>
+                        <input type="text" id="moodInput" class="filter-input" placeholder="Dark, Wholesome...">
+                    </div>
+                    <div class="filter-group">
+                        <label>Tone</label>
+                        <input type="text" id="toneInput" class="filter-input" placeholder="Warm, Neon...">
+                    </div>
+                </div>
+            </div>
+
+            <button id="curateBtn" onclick="startCurating()">
+                Find My Vibe
+            </button>
+
+        </div>
+    </div>
+
+    <!-- Popup Overlay -->
+    <div id="popupOverlay" class="popup-overlay hidden">
+        <div id="universalPopup" class="universal-popup">
+
+            <div id="loadingView" class="popup-view">
+                <div class="loader-ring"></div>
+                <p class="loading-text">Curating your vibe...</p>
+            </div>
+
+            <div id="resultView" class="popup-view hidden"></div>
+
+            <button class="close-popup-btn hidden" id="closeBtn" onclick="closePopup()">✕</button>
+
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
