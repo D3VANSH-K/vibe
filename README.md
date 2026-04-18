@@ -17,7 +17,8 @@ An AI-powered media curation app that recommends movies, series, anime, manga, a
 ## 🛠️ Tech Stack
 * **Frontend:** HTML5, CSS3, Vanilla JavaScript
 * **Backend:** Vercel Serverless Functions (Node.js)
-* **APIs:** * [Gemini API](https://aistudio.google.com/) (AI Recommendations)
+* **APIs:**
+  * [Gemini API](https://aistudio.google.com/) (AI Recommendations)
   * [TMDB API](https://developer.themoviedb.org/docs) (Movie/TV Data & Images)
   * [Jikan API](https://jikan.moe/) (Manga Data & Images)
 
