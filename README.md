@@ -1,6 +1,6 @@
-# ✦ Vibe — Find Your Match
+# ✦ Vibe Find Your Match
 
-An AI-powered media curation app that recommends movies, series, anime, manga, and books based on your exact "vibe." Describe your mood, select a genre or tone, and let Gemini 1.5 Pro find your next obsession.
+An AI-powered media curation app that recommends movies, series, anime, manga, and books based on your exact "vibe." Describe your mood, select a genre or tone, and let Gemini 3.1 Pro find your next obsession.
 
 ![HTML5](https://img.shields.io/badge/html5-%23E34F26.svg?style=for-the-badge&logo=html5&logoColor=white)
 ![CSS3](https://img.shields.io/badge/css3-%231572B6.svg?style=for-the-badge&logo=css3&logoColor=white)
