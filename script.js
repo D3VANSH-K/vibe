@@ -1,11 +1,11 @@
 // ================= CONFIGURATION =================
 const MODEL_PRIORITY = [
-    "gemini-1.5-pro-latest", // The absolute smartest, most current model
-    "gemini-1.5-pro",        // The stable Pro version
-    "gemini-1.5-flash",      // Super fast fallback just in case
-    "gemini-1.0-pro"         // Legacy fallback
+  "gemini-3.1-pro-preview", // The absolute smartest, most current model
+  "gemini-2.5-pro",         // The stable Pro version
+  "gemini-2.5-flash",       // Super fast fallback just in case
+  "gemini-1.5-pro"          // Legacy fallback
 ];
-// =================================================
+// ----------------------------------------
 
 let currentMode = "watch";
 
